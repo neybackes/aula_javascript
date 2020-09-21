@@ -3,9 +3,20 @@
     <head>
         <title>Minha Página </title>
         <meta charset="utf-8">
-        <script type="text/javascript" src="js/main.js"></script> /*endereço do arquivo js igual ao css*/
+        <script type="text/javascript" src="js/main.js"></script> 
     </head>
-    <body>  
-        <button type="button">Clique aqui</button>
+    <body onload="load()">  
+        <button type="button" onclick="clicou()">Clique aqui</button>
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>     
+        
+        
     </body>
 </html>
