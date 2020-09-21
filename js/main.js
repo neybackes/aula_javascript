@@ -1,4 +1,37 @@
-var frutas = [{nome:"maça", cor:"vermelha"}, {nome:"uva", cor:"roxa"}]//exemṕlo lista dicionários
+var d =  new Date();
+alert(d.getMonth() + 1);
+alert(d.getDay());
+alert(d.getHours());
+alert(d.getMinutes());
+
+/* Estrutura repetição for
+var count
+for (count = 0; count <=5; count++ ){
+    console.log(count);
+    alert(count);
+} */
+
+/*Estrutura de repetição while
+var count = 0;
+while(count <= 5){
+    console.log(count);
+    alert(count);
+    count++;    
+}; */
+
+
+/* CONDICIONAL
+var idade = prompt("Qual a sua idade? ") //exibir mensagem em forma de pergunta
+
+if (idade >= 18){
+    alert("maior de idade");
+}
+else{
+    alert("menor de idade");
+} */
+
+
+/*var frutas = [{nome:"maça", cor:"vermelha"}, {nome:"uva", cor:"roxa"}]//exemṕlo lista dicionários
 console.log(frutas);
 alert(frutas[1].nome)
 
