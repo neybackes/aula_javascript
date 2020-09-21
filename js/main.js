@@ -1,8 +1,29 @@
-var d =  new Date();
+//Funções
+function soma(n1, n2){
+    return n1 + n2;
+}
+var validar = 0; //UTILIZANDO A vAR GLOBAL
+//UTILIZAR VAR LOCAL PODE GERAR ERRO SE JÁ ESTIVER DECLARADA FORA DA FUNÇÃO
+function validaIdade(idade){
+    // var validar; <<<<<
+    if(validar >= 18){
+        validar = true
+    }else{
+        validar = false
+        alert("VOCÊ NÃO PODE ACESSAR A PÁGINA")
+    }
+}
+
+var idade =  prompt("Qual a sua idade?");
+console.log(validaIdade(idade));
+
+alert(soma(5,10))
+
+/*var d =  new Date();
 alert(d.getMonth() + 1);
 alert(d.getDay());
 alert(d.getHours());
-alert(d.getMinutes());
+alert(d.getMinutes());*/
 
 /* Estrutura repetição for
 var count
